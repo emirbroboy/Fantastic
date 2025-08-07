@@ -86,13 +86,7 @@ body {
 #playBTN:hover {
     background-color: #17a74a;
 }
-.play{
-    padding-left: 16px;
 
-}
-.pause{
-    padding-left: 12px;
-}
 .audio {
     display: none;
 }
@@ -185,4 +179,8 @@ body {
         margin-top: 30px;
         width: 70%;
     }
+}
+.play-icon{
+    margin: 0 auto;
+    margin-top: 7px;
 }

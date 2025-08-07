@@ -3,17 +3,18 @@ const mp3 = document.getElementById('mp3')
 const progressbar = document.querySelector('.progress_container')
 const progress = document.querySelector('.progress')
 btn.addEventListener('click' , () => {
-    if(btn.classList.contains("play")){
-        btn.textContent = "❚❚"
-        btn.classList.remove("play")
-        btn.classList.add("pause")
-        mp3.play()
-    }
-    else{
-        btn.textContent = "▶"
-        btn.classList.remove("pause")
-        btn.classList.add("play")
-        mp3.pause()
+    if (btn.classList.contains('play')) {
+    
+        icon.setAttribute('d', 'M6 4h4v16H6zM14 4h4v16h-4z'); 
+        btn.classList.remove('play');
+        btn.classList.add('pause');
+        mp3.play();
+    } else {
+        
+        icon.setAttribute('d', 'M8 5v14l11-7z'); 
+        btn.classList.remove('pause');
+        btn.classList.add('play');
+        mp3.pause();
     }
     
 })
